@@ -1,0 +1,22 @@
+{
+  "year": 2026,
+  "urssaf": {
+    "employerChargesRate": 0.25,
+    "employeeChargesRate": 0.22,
+    "netToGrossMultiplier": 1.2821,
+    "grossToTotalCostMultiplier": 1.25
+  },
+  "cmg": {
+    "childUnder6": {
+      "lowIncome": { "maxRevenue": 26271, "monthlyMax": 877, "hourlyCapHours": 57.5 },
+      "midIncome": { "minRevenue": 26271, "maxRevenue": 57016, "monthlyMax": 618, "hourlyCapHours": 57.5 },
+      "highIncome": { "minRevenue": 57016, "monthlyMax": 264, "hourlyCapHours": 57.5 }
+    },
+    "childFrom6": {
+      "lowIncome": { "maxRevenue": 26271, "monthlyMax": 438, "hourlyCapHours": 57.5 },
+      "midIncome": { "minRevenue": 26271, "maxRevenue": 57016, "monthlyMax": 309, "hourlyCapHours": 57.5 },
+      "highIncome": { "minRevenue": 57016, "monthlyMax": 132, "hourlyCapHours": 57.5 }
+    },
+    "maxCoverageRatio": 0.85
+  }
+}
