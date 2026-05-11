@@ -7,6 +7,12 @@ export default function Home() {
       <p className="mt-4 text-lg text-gray-600">
         Configurez votre garde partagée et obtenez le coût mensuel de chaque famille.
       </p>
+      <a
+        href="/configurateur"
+        className="mt-8 inline-block rounded-lg bg-blue-600 px-6 py-3 text-base font-semibold text-white hover:bg-blue-700 transition-colors"
+      >
+        Démarrer la configuration
+      </a>
     </main>
   );
 }
