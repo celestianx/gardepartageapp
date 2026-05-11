@@ -92,7 +92,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
               min={0}
               value={config.nounouNetSalary}
               onChange={(e) => onChange({ ...config, nounouNetSalary: Number(e.target.value) })}
-              className="mt-1 block w-full rounded border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
+              className="mt-1 block w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
             />
           </label>
           <label className="block">
@@ -100,7 +100,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
             <select
               value={config.splitRule}
               onChange={(e) => onChange({ ...config, splitRule: e.target.value as 'per-family' | 'per-child' })}
-              className="mt-1 block w-full rounded border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none"
+              className="mt-1 block w-full rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
             >
               <option value="per-family">Parts égales entre familles</option>
               <option value="per-child">Proportionnel aux heures</option>
@@ -142,7 +142,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
                   value={family.name}
                   onChange={(e) => updateFamily(family.id, 'name', e.target.value)}
                   placeholder="Famille Dupont"
-                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
                 />
               </label>
               <label className="block">
@@ -152,7 +152,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
                   min={0}
                   value={family.annualNetRevenue}
                   onChange={(e) => updateFamily(family.id, 'annualNetRevenue', Number(e.target.value))}
-                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
                 />
               </label>
               <label className="block">
@@ -163,7 +163,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
                   max={18}
                   value={family.youngestChildAge}
                   onChange={(e) => updateFamily(family.id, 'youngestChildAge', Number(e.target.value))}
-                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
                 />
               </label>
               <label className="block">
@@ -173,7 +173,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
                   min={0}
                   value={family.declaredMonthlyHours}
                   onChange={(e) => updateFamily(family.id, 'declaredMonthlyHours', Number(e.target.value))}
-                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
                 />
               </label>
               <label className="block sm:col-span-2">
@@ -188,7 +188,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
                     e.target.value === '' ? undefined : Number(e.target.value)
                   )}
                   placeholder="Calcul automatique"
-                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
                 />
               </label>
             </div>
@@ -224,7 +224,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
                 value={child.name}
                 onChange={(e) => updateChild(child.id, 'name', e.target.value)}
                 placeholder="Emma"
-                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
               />
             </label>
             <label className="block flex-1 min-w-[140px]">
@@ -232,7 +232,7 @@ export default function Step1Families({ config, onChange, errors }: Props) {
               <select
                 value={child.familyId}
                 onChange={(e) => updateChild(child.id, 'familyId', e.target.value)}
-                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
               >
                 {config.families.map((f) => (
                   <option key={f.id} value={f.id}>{f.name || `Famille sans nom`}</option>

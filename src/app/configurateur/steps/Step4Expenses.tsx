@@ -90,7 +90,7 @@ export default function Step4Expenses({ config, onChange, errors }: Props) {
                 value={expense.label}
                 onChange={(e) => updateExpense(expense.id, 'label', e.target.value)}
                 placeholder="Repas du midi"
-                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
               />
             </label>
             <label className="block">
@@ -100,7 +100,7 @@ export default function Step4Expenses({ config, onChange, errors }: Props) {
                 min={0}
                 value={expense.amount}
                 onChange={(e) => updateExpense(expense.id, 'amount', Number(e.target.value))}
-                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
               />
             </label>
             <label className="block sm:col-span-2">
@@ -114,7 +114,7 @@ export default function Step4Expenses({ config, onChange, errors }: Props) {
                     updateExpense(expense.id, 'childId', undefined);
                   }
                 }}
-                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
               >
                 {(Object.entries(RULE_LABELS) as [ExpenseRule, string][]).map(([value, label]) => (
                   <option key={value} value={value}>{label}</option>
@@ -127,7 +127,7 @@ export default function Step4Expenses({ config, onChange, errors }: Props) {
                 <select
                   value={expense.childId ?? ''}
                   onChange={(e) => updateExpense(expense.id, 'childId', e.target.value || undefined)}
-                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                  className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
                 >
                   <option value="">-- Sélectionner un enfant --</option>
                   {config.children.map((child) => {

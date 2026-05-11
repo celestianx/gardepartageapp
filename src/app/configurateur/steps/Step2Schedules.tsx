@@ -94,7 +94,7 @@ export default function Step2Schedules({ config, onChange, errors }: Props) {
                 value={schedule.name}
                 onChange={(e) => updateSchedule(schedule.id, 'name', e.target.value)}
                 placeholder="Semaine classique"
-                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
               />
             </label>
             <label className="block">
@@ -105,7 +105,7 @@ export default function Step2Schedules({ config, onChange, errors }: Props) {
                 max={52}
                 value={schedule.weeksPerYear}
                 onChange={(e) => updateSchedule(schedule.id, 'weeksPerYear', Number(e.target.value))}
-                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm focus:border-blue-500 focus:outline-none"
+                className="mt-1 block w-full rounded border border-gray-300 px-3 py-1.5 text-sm text-gray-900 focus:border-blue-500 focus:outline-none"
               />
             </label>
           </div>
