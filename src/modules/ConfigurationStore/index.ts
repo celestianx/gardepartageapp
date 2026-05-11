@@ -2,6 +2,9 @@ import { nanoid } from 'nanoid';
 import type { GardeConfig } from './types';
 import { ConfigNotFoundError } from './types';
 
+export { ConfigNotFoundError } from './types';
+export type { GardeConfig };
+
 // In-memory fallback for local development (no Vercel KV env vars)
 const memoryStore = new Map<string, string>();
 
